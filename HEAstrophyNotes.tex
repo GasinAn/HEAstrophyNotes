@@ -1,0 +1,39 @@
+% 编译方式: xelatex*2
+\documentclass{ctexbook}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{syntonly}
+\usepackage{IEEEtrantools}
+%\syntaxonly
+\pagestyle{plain}
+\makeatletter
+\newcommand{\starttoc}{
+    \chapter*{\contentsname}
+    \@starttoc{toc}
+}
+\makeatother
+%\renewcommand{\tableofcontents}{\twocolumn\starttoc\onecolumn}
+\hypersetup{
+    colorlinks,
+    linkcolor=blue,
+    filecolor=pink,
+    urlcolor=cyan,
+    citecolor=red,
+}
+\def\b{\boldsymbol}
+\def\d{\mathrm{d}}
+\makeatletter
+\def\@begintheorem#1#2{\trivlist
+\item[\hskip \labelsep{\bfseries #1\ }]\itshape}
+\makeatother
+\newtheorem{answer}{答}
+\newcommand{\da}[1]{\begin{answer}\emph{$\!\!\!$#1}\end{answer}}
+\title{高能天体物理笔记}
+\author{GasinAn}
+\begin{document}
+    \maketitle
+    \include{copyright.tex}
+    \tableofcontents
+\end{document}
