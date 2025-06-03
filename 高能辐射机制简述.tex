@@ -82,9 +82,34 @@ energy density
 
 \section{辐射转移}
 
+\begin{align}
+    ddE_\nu(\Omega)&=\epsilon_\nu(\Omega)\,dV_\perp(\Omega)\,dt\,d\Omega\,d\nu\\
+    &=\epsilon_\nu(\Omega)\,dA_\perp(\Omega)\,ds\,dt\,d\Omega\,d\nu\\
+    &=dI_\nu(\Omega)\,dA_\perp(\Omega)\,dt\,d\Omega\,d\nu
+\end{align}
+\begin{align}
+    dI_\nu(\Omega)=\epsilon_\nu(\Omega)\,ds,
+\end{align}
+\begin{align}
+    dS_\perp(\Omega)&=\sigma_\nu\,dN_\perp(\Omega)\\
+    &=\sigma_\nu n\,dV_\perp(\Omega)\\
+    &=\sigma_\nu n\,dA_\perp(\Omega)\,ds,
+\end{align}
+\begin{align}
+    ddE_\nu(\Omega)&=-I_\nu(\Omega)\,dS_\perp(\Omega)\,dt\,d\Omega\,d\nu\\
+    &=-I_\nu(\Omega)\sigma_\nu n\,dA_\perp(\Omega)\,ds\,dt\,d\Omega\,d\nu\\
+    &=-I_\nu(\Omega)\alpha_\nu\,dA_\perp(\Omega)\,ds\,dt\,d\Omega\,d\nu\\
+    &=dI_\nu(\Omega)\,dA_\perp(\Omega)\,dt\,d\Omega\,d\nu
+\end{align}
+\begin{align}
+    dI_\nu(\Omega)=-I_\nu(\Omega)\alpha_\nu\,ds,
+\end{align}
+
 \section{辐射机制}
 
 \subsection{黑体辐射}
+
+热平衡: 宏观无热量交换. 热辐射: 辐射源热平衡. 黑体辐射: 辐射源热平衡+辐射全被辐射源吸收 $\Rightarrow$ 辐射热平衡.
 
 \subsection{加速带电粒子的电磁辐射}
 
