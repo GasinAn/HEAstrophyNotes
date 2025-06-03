@@ -36,6 +36,50 @@ $u_\nu(\theta,\phi)$: radiative energy density 辐射能量密度,
     u_\nu=\frac{4\pi}{c}J_\nu.
 \end{equation}
 
+整理: specific intensity / brightness
+\begin{align}
+    dE_\nu(\Omega)=I_\nu(\Omega)\,dA_\perp(\Omega)\,dt\,d\Omega\,d\nu,
+\end{align}
+net flux
+\begin{align}
+    dE_\nu&=F_\nu\,dA\,dt\,d\nu\\
+    &=\int_\Omega I_\nu(\Omega)\,dA_\perp(\Omega)\,dt\,d\Omega\,d\nu\\
+    &=\int_\Omega I_\nu(\Omega)\,dA\cos\theta\,dt\,d\Omega\,d\nu\\
+    &=\left(\int_\Omega I_\nu(\Omega)\cos\theta\,d\Omega\right)\,dA\,dt\,d\nu,
+\end{align}
+momentum flux
+\begin{align}
+    d{P_\perp}_\nu(\Omega)=d{p_\perp}_\nu(\Omega)\,dA\,dt\,d\nu,
+\end{align}
+\begin{align}
+    d{P_\perp}_\nu(\Omega)&=dP_\nu(\Omega)\cos\theta\\
+    &=(dE_\nu(\Omega)/c)\cos\theta\\
+    &=(I_\nu(\Omega)/c)\cos^2\theta\,d\Omega\,dA\,dt\,d\nu,
+\end{align}
+energy density
+\begin{align}
+    dE_\nu(\Omega)&=u_\nu(\Omega)\,dV_\perp(\Omega)\,d\Omega\,d\nu\\
+    &=u_\nu(\Omega)\,dA_\perp(\Omega)\,cdt\,d\Omega\,d\nu,
+\end{align}
+\begin{align}
+    dE_\nu(\Omega)=I_\nu(\Omega)\,dA_\perp(\Omega)\,dt\,d\Omega\,d\nu,
+\end{align}
+\begin{align}
+    J_\nu&=\frac{\int I_\nu(\Omega)\,d\Omega}{\int \,d\Omega}\\
+    &=\int (I_\nu(\Omega)/4\pi)\,d\Omega.
+\end{align}
+
+\begin{equation}
+    {I_\nu}_1(\Omega)\,{dA_\perp}_1(\Omega)\,dt\,{d\Omega}_1\,d\nu={I_\nu}_2(\Omega)\,{dA_\perp}_2(\Omega)\,dt\,{d\Omega}_2\,d\nu,
+\end{equation}
+\begin{equation}
+    {d\Omega}_1={dA_\perp}_2(\Omega)/r^2,\quad
+    {d\Omega}_2={dA_\perp}_1(\Omega)/r^2,
+\end{equation}
+\begin{equation}
+    {I_\nu}_1(\Omega)={I_\nu}_2(\Omega).
+\end{equation}
+
 \section{辐射转移}
 
 \section{辐射机制}
