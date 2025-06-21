@@ -111,24 +111,55 @@ energy density
 
 热平衡: 宏观无热量交换. 热辐射: 辐射源热平衡. 黑体辐射: 辐射源热平衡+辐射全被辐射源吸收 $\Rightarrow$ 辐射热平衡.
 
+$\hbar\omega/kT\ll 1$, $\propto\omega^2$ $\hbar\omega/kT\gg 1$, $\propto e^{-\hbar\omega/kT}$. $\hbar\omega_\text{W}/kT\approx2.82$.
+
 \subsection{加速带电粒子的电磁辐射}
+
+\begin{equation}
+    \vec{A}(t,\vec{r})=\frac{\mu_0}{4\pi}\int\frac{\vec{j}(t-|\vec{r}-\vec{r}'|,\vec{r}')}{|\vec{r}-\vec{r}'|}dV'
+\end{equation}
+$\vec{r}_e(t)$, $\vec{j}(t,\vec{r}')=q\delta(\vec{r}'-\vec{r}_e)\vec{v}_e$, $K=1-\frac{\vec{r}-\vec{r}_e}{|\vec{r}-\vec{r}_e|}\vec{v}_e$,
+\begin{equation}
+    \vec{A}(t,\vec{r})=\left.\left[\frac{q\vec{v}_e}{K|\vec{r}-\vec{r}_e|}\right]\right|_{t=t-|\vec{r}-\vec{r}_e|}
+\end{equation}
 
 \subsubsection{电场中单电子的辐射}
 
+$I_\parallel/I_\perp\approx 1/\gamma^2$, $\omega\approx\gamma v/b$.
+
 \paragraph{热韧致辐射}
+
+$\tau\gg 1$, $\propto\omega^2$, $\tau\ll 1 \wedge \hbar\omega/kT\ll 1$, $\approx\text{const}$, $\hbar\omega/kT\gg 1$, $\propto e^{-\hbar\omega/kT}$.
 
 \paragraph{非热韧致辐射}
 
 \subsection{磁场中单电子的辐射}
 
+$evB=\gamma m \omega^2 r=\gamma m \omega v$, $\omega_\text{g}=eB/\gamma m=\omega_\text{cycle}/\gamma$.
+
 \paragraph{回旋辐射}
 
 \paragraph{同步辐射}
+
+周期 $2\pi/\omega_\text{g}$, 宽度 $\approx1/\gamma^3\omega_\text{g}$.
+
+$\omega/\omega_\text{c}\ll 1$, $\propto\omega^{1/3}$, $\omega/\omega_\text{c}\gg 1$, $\propto e^{-\omega/\omega_\text{c}}$. $\omega_\text{c}=3\gamma^2eB/2m=(3/2)\gamma^3\omega_\text{g}$.
+
+$\tau\gg 1$, $I(\omega)\propto\omega^{5/2}$, $\tau\ll 1$, $N(E)\propto E^{-p}$, $I(\omega)\propto \omega^{-(p-1)/2}$.
 
 \subsection{光子散射}
 
 \subsubsection{Thomson 散射}
 
+   $m_ec^2 = \frac{e^2}{4\pi\epsilon_0 r_e}$
+\begin{equation}
+    \frac{d \sigma_\text{T}}{d \Omega}:=\frac{\frac{d E_\text{out}}{dt d\Omega}}{S_\text{in}}=\frac{\frac{d E_\text{out}}{dt d\Omega}}{\frac{d E_\text{in}}{dt dA}},\quad S_\text{in}\sigma_\text{T}=\frac{d E_\text{out}}{dt}
+\end{equation}
+
 \subsubsection{Compton 散射}
 
+$\hbar\omega/m_ec^2\ll1$, $\sigma\approx\sigma_\text{T}$, $\hbar\omega/m_ec^2\gg1$, $\sigma\propto\omega^{-1}$.
+
 \subsubsection{逆 Compton 散射}
+
+$\omega\le 4\gamma^2\omega_0$. $\omega\ll 4\gamma^2\omega_0$, $\propto\omega$
